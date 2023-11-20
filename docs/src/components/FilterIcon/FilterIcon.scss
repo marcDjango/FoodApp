@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100dvh;
+  // height: 100%;
   z-index: 2;
   gap: 3rem;
   background-color: rgba(0, 0, 0, 0.755);
@@ -16,12 +16,13 @@
   &.open {
     transform: translateX(0%);
   }
-
+  
   .main-icon-container {
     display: flex;
     width: 95%;
     height: auto;
     justify-content: flex-end;
+    overflow-y: hidden;
 
     .close-btn {
       background: none;
@@ -42,7 +43,7 @@
 
   .filterbtn-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     justify-content: center;
     align-items: flex-start;
@@ -164,23 +165,23 @@
   .main-filter-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 3rem;
     background-color: rgba(0, 0, 0, 0.755);
-    padding-block: 5vh;
-    overflow-y: auto;
-
+    padding-block: 1rem;
+    
     .main-icon-container {
       display: flex;
       width: 95%;
       height: auto;
       justify-content: flex-end;
-
+      
       .close-btn {
         background: none;
         border: none;
       }
-
+      
       .close-btn:hover {
         cursor: pointer;
         transform: scale(1.1);
@@ -188,16 +189,17 @@
     }
 
     .filterbtn-container {
-      //modifié
       display: flex;
       flex-direction: column;
       width: 100%;
+      height: 100%;
       justify-content: center;
       align-items: center;
-      // gap: 1rem;
+      gap: 1rem;
       border: 1px solid red;
-      // padding: 2rem;
-
+      padding: 2rem;
+      overflow-y: hidden;
+      
       .title-mobile {
         display: flex;
         background: none;

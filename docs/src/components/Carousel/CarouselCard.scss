@@ -1,7 +1,9 @@
 .blockCarousel {
   position: relative;
   display: flex;
-
+  .CarouselMobile {
+    border-radius: 25px;
+  }
   .left {
     position: absolute;
     left: 3%;
@@ -28,6 +30,7 @@
     width: 100%;
 
     img {
+      border-radius: 25px;
       width: 100%;
     }
   }
@@ -35,12 +38,14 @@
 @media screen and (min-width: 600px) {
   .blockCarousel {
     .CarouselMobile {
+      border-radius: 25px;
       position: relative;
       top: -42px;
       display: block;
     }
-
+    
     .CarouselDesktop {
+      border-radius: 25px;
       display: grid;
     }
   }

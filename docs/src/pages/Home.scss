@@ -2,11 +2,11 @@
   position: relative;
 
   .open-btn {
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    background: none;
-    border: none;
+    // position: absolute;
+    // top: 2.5rem;
+    // right: 2.5rem;
+    // background: none;
+    // border: none;
   }
 }
 
@@ -19,11 +19,14 @@
 @media screen and (max-width: 400px) {
   .home-container {
     position: relative;
-
+    width: 100%;
     .open-btn {
-      position: absolute;
-      top: 31rem;
-      right: 2.5rem;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      // top: 31rem;
+      // right:0rem;
       background: none;
       border: none;
     }
