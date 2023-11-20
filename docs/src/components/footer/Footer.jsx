@@ -99,7 +99,7 @@ function Footer() {
             </div>
             <div className="pages-container">
               <Link className="custom-link" to="/AboutUs">
-                About us
+                About Us
               </Link>
               <Link className="custom-link" to="/nutriscore">
                 Nutri-Score
