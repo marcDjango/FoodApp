@@ -24,7 +24,11 @@ function Footer() {
       <div className="footer-menu">
         <div className="main-container">
           <div id="main-logo">
-            <Link to="/">
+            <Link
+              to="/"
+              className="logo-link"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <img className="logo1" src={Logo} alt="logo" />
             </Link>
           </div>

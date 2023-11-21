@@ -16,7 +16,7 @@ function Navbar() {
     windowWidth >= 600 && isFixed ? "NavBarOFixe" : "NavbarOpen";
   return (
     <nav className={navBarStyle}>
-      <Link to="/">
+      <Link to="/" onClick={() => window.scrollTo(0, 0)}>
         <img src={logo} className="Logo" alt={currentPath} />
       </Link>
       {windowWidth <= 600 ? <SearchBar locationHome={isHome} /> : ""}

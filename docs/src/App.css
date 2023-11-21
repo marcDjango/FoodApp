@@ -39,6 +39,8 @@ button {
 }
 body {
   background-color: #242323;
+
+  scroll-behavior: smooth;
 }
 main {
   margin-bottom: 20vh;

@@ -9,6 +9,7 @@ import "./card.scss";
 function Card({ data }) {
   const { setData } = useData();
   const handleClickCard = () => {
+    window.scrollTo(0, 440);
     setData(data);
   };
   return (
