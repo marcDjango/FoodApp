@@ -17,9 +17,12 @@ nav {
   .NavbarO {
     display: none;
   }
-  
   .Logo {
-    width: 70%;
+    width:70%;
+  }
+  .logo-name{
+    position: relative;
+    left: -15%;
   }
   .MenuBurgall {
     display: flex;

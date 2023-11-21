@@ -1,6 +1,6 @@
 async function getRecipes(cuisineType, health, diets, nutri, meal, time) {
   try {
-    let apiUrl = `${import.meta.env.VITE_API_URL}?type=public&app_id=${
+    let apiUrl = `${import.meta.env.VITE_API_URL}&app_id=${
       import.meta.env.VITE_EDAMAN_API_ID
     }&app_key=${import.meta.env.VITE_EDAMAN_API_KEY}`;
 

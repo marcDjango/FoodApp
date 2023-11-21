@@ -19,7 +19,11 @@ function Navbar() {
       <Link to="/" onClick={() => window.scrollTo(0, 0)}>
         <img src={logo} className="Logo" alt={currentPath} />
       </Link>
-      {windowWidth <= 600 ? <SearchBar locationHome={isHome} /> : ""}
+      {windowWidth <= 600 ? (
+        <SearchBar locationHome={isHome} />
+      ) : (
+        <img src={logoName} className="logo-name" alt={currentPath} />
+      )}
       <MenuBurger />
       <DesktopNav />
     </nav>
